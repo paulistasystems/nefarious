@@ -46,6 +46,8 @@ services:
       - ${HOST_DOWNLOAD_PATH:-/tmp}:/downloads
       # persistent named volume for sqlite database
       - nefarious-db:/nefarious-db
+      # mount local entrypoint to fix pidfile issue
+      - ./entrypoint-celery.sh:/app/entrypoint-celery.sh:ro
     logging:
       options:
         max-size: 2m
