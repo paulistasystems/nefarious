@@ -1,5 +1,7 @@
 # nefarious
 
+**This is a fork of the original [lardbit/nefarious](https://github.com/lardbit/nefarious) project. This version addresses a file handling issue when running with OrbStack on macOS, where media files were being duplicated instead of moved to their final destination. It also includes a cleanup script to help manage these duplicates.**
+
 **nefarious is a web application that automatically downloads Movies and TV Shows.**
 
 [![Build Status](https://github.com/lardbit/nefarious/actions/workflows/build.yml/badge.svg)](https://github.com/lardbit/nefarious/actions/workflows/build.yml)

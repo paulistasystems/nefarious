@@ -3,11 +3,13 @@
 # Script para encontrar e resolver duplicatas do Nefarious
 # Compara arquivos entre as pastas intermediárias e a pasta de destino final
 
-DOWNLOADS="/Users/paulista/Downloads"
-FINAL="$DOWNLOADS/movies"
-UNPROCESSED="$DOWNLOADS/.nefarious-unprocessed-downloads/movies"
-INCOMPLETE="$DOWNLOADS/.incomplete"
-TRANSMISSION_CONTAINER="nefarious-transmission-1"
+# Carrega variáveis de ambiente ou usa padrões
+DOWNLOADS="${NEFARIOUS_DOWNLOADS_PATH:-/Users/paulista/Downloads}"
+FINAL="${NEFARIOUS_FINAL_PATH:-$DOWNLOADS/movies}"
+UNPROCESSED="${NEFARIOUS_UNPROCESSED_PATH:-$DOWNLOADS/.nefarious-unprocessed-downloads/movies}"
+INCOMPLETE="${NEFARIOUS_INCOMPLETE_PATH:-$DOWNLOADS/.incomplete}"
+TRANSMISSION_CONTAINER="${NEFARIOUS_TRANSMISSION_CONTAINER:-nefarious-transmission-1}"
+CELERY_CONTAINER="${NEFARIOUS_CELERY_CONTAINER:-nefarious-celery-1}"
 
 # Cores para output
 RED='\033[0;31m'
