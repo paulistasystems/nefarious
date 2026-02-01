@@ -154,3 +154,14 @@ See [TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md).
 ### Development
 
 See [DEVELOPMENT.md](docs/DEVELOPMENT.md).
+
+### Syncing with Upstream
+
+This is a fork of [lardbit/nefarious](https://github.com/lardbit/nefarious) optimized for macOS with OrbStack.
+
+To fetch updates from the original repository:
+
+```bash
+git fetch upstream
+git merge upstream/master
+```
